@@ -1,0 +1,54 @@
+/* ==================================
+   #PARAGRAPH
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-paragraph-base            : $au-h6 !default;
+$au-paragraph-base-small      : $au-base !default;
+$au-paragraph-base-large      : $au-h5 !default;
+$au-paragraph-small           : $au-base !default;
+
+
+/* Component
+  ========================================================================== */
+
+.au-c-paragraph {
+  @include au-font-size($au-paragraph-base-small);
+  word-break: break-word;
+  white-space: normal;
+
+  strong {
+    font-weight: var(--au-medium);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  @include mq(medium) {
+    @include au-font-size($au-content-base);
+  }
+}
+
+.au-c-paragraph--small {
+  @include au-font-size($au-paragraph-small);
+}
+
+.au-c-paragraph--large {
+  @include au-font-size($au-paragraph-base);
+
+  @include mq(medium) {
+    @include au-font-size($au-paragraph-base-large);
+  }
+}
+
+.au-c-paragraph--muted {
+  color: var(--au-gray-600);
+}
+
+.au-c-paragraph--uppercase {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}

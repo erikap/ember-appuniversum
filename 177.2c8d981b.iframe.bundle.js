@@ -1,0 +1,1 @@
+(globalThis.webpackChunk_appuniversum_ember_appuniversum=globalThis.webpackChunk_appuniversum_ember_appuniversum||[]).push([[177],{"?6eb0":()=>{}}]);
